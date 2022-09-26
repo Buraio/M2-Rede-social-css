@@ -1,0 +1,5 @@
+.title:focus, .description:focus {
+  border: 2px solid var(--color1);
+}
+
+/* Ainda em construção!! */

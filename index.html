@@ -4,16 +4,150 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/globalStyles.css" />
+    <link rel="stylesheet" href="./styles/users.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/posts.css">
+    <link rel="stylesheet" href="./styles/uSugestions.css">
+    <link rel="stylesheet" href="./styles/modal.css">
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/effects.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    
     <title>TechPosters - Home</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header class="navHeader">
+      <nav class="navBar">
+        <img class="logo" src="assets/img/logo.svg" alt="">
+        <button class="logOutButton">Sair</button>
+      </nav>
+    </header>
+    <div class="centerDiv">
+    <div class="mediaDiv">
+      <main class="containerConfig writePost">
+        <section class="createPost">
+          <div class="containerDiv">
+            <img  class="userImage" src="assets/img/user1.svg" alt="">
+            <div class="userProfileDiv">
+              <h3 class="userName">Samuel Leão</h3>
+              <small class="userProfession">Front end Engineer</small>
+            </div>
+          </div>
+          <form class="postForm" action="">
+              <input class="title" type="text" placeholder="Digitar título do post">
+              <textarea id="" class="description" name="post" cols="30" rows="10" placeholder="Digitar descrição do post"></textarea>
+              <div class="publishDiv">
+              <button class="publishButton">Postar</button>
+              </div>
+          </form>
+        </section>
+      </main>
+      <aside class="containerConfig">
+        <h2 class="sugestionHeading">Sugestões para você seguir</h2>
+        <div class="asideCont">
+          <section class="userSugestion">
+            <div class="containerDiv">
+              <img  class="userImage" src="assets/img/user3.svg" alt="">
+              <div class="userDiv">
+                <h3 class="userName">Carlos Lima</h3>
+                <small class="userProfession">UX e UI designer</small>
+              </div>
+            </div>
+            <button class="userFollowButton following">Seguindo</button>
+          </section>
+          <section class="userSugestion">
+            <div class="containerDiv">
+              <img  class="userImage" src="assets/img/user6.svg" alt="">
+              <div>
+                <h3 class="userName">Larissa Cavende</h3>
+                <small class="userProfession">UI Developer</small>
+              </div>
+            </div>
+              <button class="userFollowButton notFollowing">Seguir</button>
+          </section>
+          <section class="userSugestion">
+            <div class="containerDiv">
+              <img  class="userImage" src="assets/img/user3.svg" alt="">
+              <div class="userDiv">
+                <h3 class="userName">Carlos Lima</h3>
+                <small class="userProfession">UX e UI designer</small>
+              </div>
+            </div>
+            <button class="userFollowButton notFollowing">Seguir</button>
+          </section>
+        </div>
+      </aside>
+    </div>
+      <main class="containerConfig otherPosts">
+          <section class="mContainer">
+            <h3 class="heading">Posts</h3>
+            <article class="post mContent">
+              <div class="containerDiv">
+                <img  class="userImage" src="assets/img/user3.svg" alt="">
+                <div class="userDiv">
+                  <h3 class="userName">Carlos Lima</h3>
+                  <small class="userProfession">UX e UI designer</small>
+                </div>
+              </div>
+              <h3 class="postTitle">Como criar uma interface simples e agradável utilizando boas práticas de design</h3>
+              <p class="postDescription">Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design.</p>
+              <div class="postInteraction">
+                <button class="showPost modalBtn" data-modal-control="modalDiv">Abrir Post</button>
+                <span>
+                  <img class="likePost off" src="assets/icons/likeHeartOff.svg" alt="">
+                  <small class="likeNumber">1</small>
+                </span>
+              </div>
+            </article>
+            <article class="post mContent">
+              <div class="containerDiv">
+                <img  class="userImage" src="assets/img/user3.svg" alt="">
+                <div class="userDiv">
+                  <h3 class="userName">Carlos Lima</h3>
+                  <small class="userProfession">UX e UI designer</small>
+                </div>
+              </div>
+              <h3 class="postTitle">Como criar uma interface simples e agradável utilizando boas práticas de design</h3>
+              <p class="postDescription">Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design.</p>
+              <div class="postInteraction">
+                <button class="showPost borderRad4px noBorder fSize1">Abrir Post</button>
+                <span>
+                  <img class="likePost off" src="assets/icons/likeHeartOff.svg" alt="">
+                  <small class="likeNumber">1</small>
+                </span>
+              </div>
+            </article>
+          </section>
+        </main>
+      </div>
+      <div class="modalDiv">
+        <article class="modal">
+          <div class="containerDiv">
+            <img  class="userImage" src="assets/img/user1.svg" alt="">
+            <div class="userProfileDiv">
+              <h3 class="userName">Samuel Leão</h3>
+              <small class="userProfession">Front end Engineer</small>
+            </div>
+          </div>
+          <button class="modalClose modalBtn" data-modal-control="modalDiv">X</button>
+          <h3 class="postTitle">
+            Como criar um interface simples e agradável utilizando boas práticas de design
+          </h3>
+          <p class="modalDescription">
+            Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design.
+          </p>
+          <p class="modalDescription">
+            Antes de iniciar a criação de qualquer projeto, busque referências de aplicações que tenham a ver com o nicho que você está desenvolvendo. Por exemplo, quando quero criar um e-commerce de roupas, vou reservar um momento para buscar por aplicações do gênero, tanto acessando ou baixando apps e vendo o que se repete de informações em cada um dos aplicativos e sites referentes a compra de roupas, e também, observar cores que normalmente você enxerga em cada um dos apps.
+          </p>
+        </article>
+      </div>
   </body>
   <script src="./script/database/users.js"></script>
   <script src="./script/database/posts.js"></script>
   <script src="./script/database/sugestUsers.js"></script>
   <script src="./script/database/index.js"></script>
-</html>
+  </html>
+  

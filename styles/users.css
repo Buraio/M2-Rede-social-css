@@ -1,0 +1,25 @@
+.userImage {
+  max-width: 52px;
+  height: 54px;
+}
+
+.userProfileDiv {
+  width: 130px;
+  height: 45px;
+}
+
+.containerDiv {
+  align-items: center;
+  gap: 12px;
+}
+
+.userName {
+  height: 24px;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.userProfession {
+  height: 16px;
+  margin-top: 5px;
+}

@@ -1,0 +1,32 @@
+.sugestionHeading {
+  max-width: 350px;
+  font-size: 1.25rem;
+  /* 1.25rem == 20px */
+}
+
+.asideCont {
+  height: 120px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  overflow-y: auto;
+}
+
+.userSugestion {
+  width: auto;
+  height: 100px;
+}
+
+.userFollowButton {
+  width: 65px;
+  height: 30px;
+  color: #212529;
+  border: 1px solid #44484b;
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+.following {
+  width: 90px;
+  background-color: var(--color1);
+}

@@ -1,0 +1,31 @@
+.modalDiv {
+  height: 100vh;
+  background-color: rgb(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modal {
+  max-width: 100%;
+  max-height: 650px;
+  border-radius: 8px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modalClose {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-grey-3 0.8);
+  border-radius: 50%;
+  font-size: 16px;
+  color: var(--color-grey-2);
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-family: 'Comfortaa', cursive;
+}
+

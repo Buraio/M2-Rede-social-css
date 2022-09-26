@@ -1,0 +1,86 @@
+@media (min-width: 900px) {
+
+  .mediaDiv {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .containerConfig {
+    margin: 0;
+  }
+
+  .writePost, .otherPosts {
+    width: 65%;
+  }
+
+  .createPost {
+    padding: 0;
+  }
+
+  .asideCont {
+    max-width: 250px;
+    height: 100%;
+    max-height: 450px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    position: fixed;
+    top: 120px;
+    gap: 40px;
+  }
+
+  .sugestionHeading {
+    position: fixed;
+    top: 105px;
+  }
+
+  .userSugestion {
+    gap: 16px;
+  }
+
+  .modal {
+    margin: 50px 0 0;
+    max-width: 700px;
+    height: auto;
+    max-height: 1000px;
+  }
+
+}
+
+@media (min-width: 1100px) {
+
+  .navBar {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+
+  .centerDiv {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .mediaDiv {
+    gap: 25px;
+  }
+
+  .asideCont {
+    max-width: 340px;
+    height: 100%;
+    max-height: 450px;  
+    gap: 50px;
+  }
+
+  .userSugestion {
+    width: 100%;
+    max-width: 320px;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .morePosts {
+    width: 100%;
+    max-width: 750px;
+  }
+
+}

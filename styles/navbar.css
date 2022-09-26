@@ -1,30 +1,21 @@
-.navbar{
-    background-color: var(--color-grey-1);
-    padding: 1.75rem 0;
+.navHeader {
+    height: 70px;
+    position: fixed;
+    padding: 15px 20px;
 }
 
-.navbar-items{
-    display: flex;
-    justify-content: space-between;
+.navBar {
+    height: 100%;
 }
 
-.navbar-links{
-    display: flex;
-    gap: 1rem;
+.logOutButton {
+    width: 40px;
+    font-size: 0.875rem; 
+    /* 0.875rem == 14px */
 }
 
-.navbar-link{
-    background-color: transparent;
-    color: var(--color-white-fixed);
-    height: 2rem;
-    padding: 0.5rem;
-    border-radius: var(--radius-1);
-    text-decoration: none;
-    font-size: 0.875rem;
-    font-weight: 400;
-    cursor: pointer;
-}
-
-.navbar-link:hover, .navbar-link.actived{
-    background-color: var(--color-grey-2);
+.logo {
+    width: 35%;
+    height: auto;
+    max-width: 150px;
 }

@@ -1,1 +1,94 @@
-   
+/* Contâiner e espaçamento */
+.containerConfig {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.modalDiv {
+  width: 100vw;
+}
+
+.navHeader, .postForm, .title, .description, .publishDiv, .asideCont, .modalDescription {
+  width: 100%;
+}
+
+.postForm, .asideCont, .post {
+  margin: var(--marginPage);
+}
+
+.modalDiv, .modal {
+  padding: 40px 20px;
+}
+
+/* Cores */
+.showPost, .following, .logOutButton {
+  color: var(--colorWhite);
+}
+
+.logOutButton, .notFollowing, .modal {
+  background-color: var(--colorWhite);
+}
+
+.showPost, .navHeader, .logOutButton {
+  background-color: var(--color-grey-1);
+}
+
+/* Fonte e texto*/
+.title, .description {
+  font-size: 1rem;
+  border: 2px solid var(--color-grey-3);
+}
+
+.userProfession, .publishButton, .showPost, .userFollowButton {
+  font-size: var(--fontSize1);
+}
+
+.heading, .postTitle {
+  font-size: 1.5rem;
+  /* 1.5rem == 24px */
+}
+
+body, .logOutButton, .title, .description, .publishButton, .userFollowButton, .showPost {
+  font-family: var(--fontFamily1);
+}
+
+.userName, .publishButton, .sugestionHeading, .showPost {
+  font-weight: 600;
+}
+
+.heading, .postTitle, .modalClose {
+  font-weight: 700;
+}
+
+.postDescription, .modalDescription{
+  color: var(--color-grey-2);
+  line-height: 28px;
+  word-wrap: break-word;
+}
+
+/* Borda e cursor */
+.logOutButton, .publishButton, .following, .showPost, .modalClose {
+  border: none;
+}
+
+.title, .description, .publishButton, .showPost {
+  border-radius: var(--borderRad1);
+}
+
+.logOutButton, .publishButton, .userFollowButton, .showPost, .modalClose {
+  cursor: pointer;
+}
+
+/* Display */
+.navBar, .userProfileDiv, .containerDiv, .publishDiv, .asideCont, .userSugestion, .postInteraction, .postInteraction > span, .modalDiv {
+  display: flex;
+}
+
+.navBar, .userSugestion, .postInteraction > span {
+  justify-content: space-between;
+}
+
+.userProfileDiv, .asideCont, .userSugestion {
+  flex-direction: column;
+}
